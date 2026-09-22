@@ -9,19 +9,19 @@
   --color-paper: #fffcf7;
   --color-card: #ffffff;
 
-  --color-blush: #ffe4ea;
-  --color-blush-deep: #ffcdda;
-  --color-mint: #e1f4e8;
-  --color-mint-deep: #c3e9d1;
-  --color-lavender: #eae3fa;
-  --color-lavender-deep: #d9c9f5;
-  --color-butter: #fff3d6;
-  --color-butter-deep: #ffe6a8;
-  --color-sky: #dcf0fb;
-  --color-sky-deep: #bfe4f5;
-  --color-peach: #ffe6d9;
-  --color-peach-deep: #ffcbb0;
-  --color-coral: #ff9d95;
+  --color-blush: #ffc2d1;
+  --color-blush-deep: #ff8fac;
+  --color-mint: #9be8bb;
+  --color-mint-deep: #5bd394;
+  --color-lavender: #cbb2f7;
+  --color-lavender-deep: #a880f2;
+  --color-butter: #ffdd6b;
+  --color-butter-deep: #ffc93d;
+  --color-sky: #7fd8f7;
+  --color-sky-deep: #3cc2f0;
+  --color-peach: #ffb28a;
+  --color-peach-deep: #ff8a52;
+  --color-coral: #ff6f6a;
 }
 
 @theme inline {
