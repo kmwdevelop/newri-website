@@ -3,14 +3,14 @@ import Reveal from "./Reveal";
 
 export default function Story() {
   return (
-    <section id="story" className="px-6 py-20 md:py-28">
+    <section id="story" className="px-6 py-20 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-brown px-8 py-16 text-center sm:px-16">
-          <div className="pointer-events-none absolute -top-16 -left-16 h-56 w-56 rounded-full bg-white/5" />
-          <div className="pointer-events-none absolute -bottom-20 -right-10 h-64 w-64 rounded-full bg-white/5" />
+        <div className="relative overflow-hidden rounded-[2rem] border-[4px] border-ink bg-pink px-8 py-16 text-center sticker-shadow-lg sm:px-16">
+          <span className="pointer-events-none absolute left-6 top-10 text-3xl text-white/40">✦</span>
+          <span className="pointer-events-none absolute right-10 bottom-10 text-2xl text-white/40">✧</span>
 
           <Reveal className="relative flex flex-col items-center">
-            <div className="rounded-full bg-white/10 p-4">
+            <div className="animate-bob rounded-full border-[3px] border-ink bg-white p-3 sticker-shadow-sm">
               <Image
                 src="/brand/mascot-grey.jpeg"
                 alt="뉴리 마스코트"
@@ -20,14 +20,14 @@ export default function Story() {
               />
             </div>
 
-            <span className="mt-6 text-xs font-semibold tracking-widest text-cream/60">
+            <span className="mt-6 rounded-full border-2 border-white/60 px-3 py-1 text-xs font-bold tracking-widest text-white/90">
               BRAND STORY
             </span>
-            <h2 className="mt-3 text-2xl font-extrabold text-cream sm:text-3xl">
+            <h2 className="mt-3 font-display text-3xl text-white sm:text-4xl">
               뉴리뉴리 (New:ri New:ri)
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-loose text-cream/85 sm:text-base">
-              뉴리뉴리는 &ldquo;오직, 당신만을 위한 핸드메이드&rdquo;라는 슬로건 아래
+            <p className="mx-auto mt-6 max-w-2xl font-hand text-lg leading-loose text-white sm:text-xl">
+              &ldquo;오직, 당신만을 위한 핸드메이드&rdquo;라는 슬로건 아래
               반려동물·가족·연인을 테마로 맞춤 제작하는
               쿠션 키링·파우치·지갑 핸드메이드 브랜드예요.
               <br className="hidden sm:block" />

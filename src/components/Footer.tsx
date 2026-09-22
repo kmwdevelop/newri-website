@@ -5,17 +5,19 @@ const INSTAGRAM_URL = "https://www.instagram.com/newri_newri/";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-brown/10 px-6 py-10">
+    <footer className="border-t-4 border-ink bg-cream-deep px-6 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
         <div className="flex items-center gap-2">
-          <Image
-            src="/brand/logo.jpg"
-            alt="New:ri"
-            width={28}
-            height={28}
-            className="rounded-full"
-          />
-          <span className="text-sm font-bold text-brown">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-ink bg-white">
+            <Image
+              src="/brand/logo.jpg"
+              alt="New:ri"
+              width={24}
+              height={24}
+              className="rounded-full"
+            />
+          </div>
+          <span className="font-display text-base text-ink">
             뉴리뉴리 New:ri
           </span>
         </div>

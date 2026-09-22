@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const NAV_LINKS = [
   { href: "#products", label: "상품 소개" },
@@ -10,43 +9,32 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-cream/80 backdrop-blur-md shadow-[0_1px_0_0_rgba(92,62,40,0.08)]"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2">
-          <Image
-            src="/brand/logo.jpg"
-            alt="New:ri 뉴리뉴리"
-            width={36}
-            height={36}
-            className="rounded-full"
-          />
-          <span className="text-lg font-extrabold tracking-tight text-brown">
+    <header className="sticky top-0 z-50 border-b-4 border-ink bg-cream">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+        <a href="#top" className="flex items-center gap-2.5">
+          <div className="flex h-11 w-11 items-center justify-center rounded-full border-[3px] border-ink bg-white sticker-shadow-sm -rotate-6">
+            <Image
+              src="/brand/logo.jpg"
+              alt="New:ri 뉴리뉴리"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+          </div>
+          <span className="font-display text-2xl tracking-tight text-ink">
             New:ri
           </span>
         </a>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-brown-soft md:flex">
-          {NAV_LINKS.map((link) => (
+        <nav className="hidden items-center gap-2 md:flex">
+          {NAV_LINKS.map((link, i) => (
             <a
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-brown"
+              className={`rounded-full border-[3px] border-ink bg-white px-4 py-1.5 text-sm font-bold text-ink transition-transform hover:-translate-y-0.5 ${
+                i % 2 === 0 ? "-rotate-2" : "rotate-2"
+              }`}
             >
               {link.label}
             </a>
@@ -55,7 +43,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="rounded-full bg-brown px-5 py-2.5 text-sm font-semibold text-cream shadow-sm transition-transform hover:scale-105 active:scale-95"
+          className="rounded-full border-[3px] border-ink bg-pink px-5 py-2 font-display text-sm text-white sticker-shadow-sm transition-transform hover:-translate-y-0.5 hover:rotate-2 active:translate-y-0 active:shadow-none"
         >
           문의하기
         </a>

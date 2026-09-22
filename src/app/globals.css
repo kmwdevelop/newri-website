@@ -2,19 +2,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdf8f0;
-  --foreground: #4a3527;
+  --background: #fff6e9;
+  --foreground: #2b1a10;
 
-  --color-cream: #fdf8f0;
-  --color-cream-deep: #fbeedb;
+  --color-cream: #fff6e9;
+  --color-cream-deep: #ffecc9;
+  --color-ink: #2b1a10;
   --color-brown: #5c3e28;
   --color-brown-soft: #8a6a4e;
   --color-brown-muted: #a98a6c;
-  --color-pink: #ffb9c6;
-  --color-blush: #ffe6ea;
-  --color-sky: #cfe6f7;
-  --color-butter: #ffe6a0;
-  --color-sage: #dcebd1;
+  --color-pink: #ff7fa8;
+  --color-pink-soft: #ffc2d8;
+  --color-blush: #ffe1ea;
+  --color-sky: #5ec9f0;
+  --color-sky-soft: #cdeefb;
+  --color-butter: #ffd24a;
+  --color-butter-soft: #ffedb0;
+  --color-sage: #8fd39a;
+  --color-sage-soft: #d9f2dc;
+  --color-lilac: #c9a6ff;
 }
 
 @theme inline {
@@ -22,15 +28,23 @@
   --color-foreground: var(--foreground);
   --color-cream: var(--color-cream);
   --color-cream-deep: var(--color-cream-deep);
+  --color-ink: var(--color-ink);
   --color-brown: var(--color-brown);
   --color-brown-soft: var(--color-brown-soft);
   --color-brown-muted: var(--color-brown-muted);
   --color-pink: var(--color-pink);
+  --color-pink-soft: var(--color-pink-soft);
   --color-blush: var(--color-blush);
   --color-sky: var(--color-sky);
+  --color-sky-soft: var(--color-sky-soft);
   --color-butter: var(--color-butter);
+  --color-butter-soft: var(--color-butter-soft);
   --color-sage: var(--color-sage);
+  --color-sage-soft: var(--color-sage-soft);
+  --color-lilac: var(--color-lilac);
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+  --font-display: var(--font-jua), var(--font-sans);
+  --font-hand: var(--font-gaegu), var(--font-sans);
 }
 
 body {
@@ -45,5 +59,64 @@ html {
 
 ::selection {
   background: var(--color-pink);
-  color: var(--color-brown);
+  color: white;
+}
+
+/* --- sticker / Y2K kit --- */
+
+.outline-ink {
+  border-color: var(--color-ink);
+}
+
+.sticker-shadow {
+  box-shadow: 5px 5px 0 0 var(--color-ink);
+}
+
+.sticker-shadow-sm {
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+}
+
+.sticker-shadow-lg {
+  box-shadow: 8px 8px 0 0 var(--color-ink);
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 2.4s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bob {
+  animation: bob 3.2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
 }
