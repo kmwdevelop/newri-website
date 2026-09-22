@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import FeatureStrip from "@/components/FeatureStrip";
 import Products from "@/components/Products";
-import Moments from "@/components/Moments";
+import Reviews from "@/components/Reviews";
 import Story from "@/components/Story";
 import HowItWorks from "@/components/HowItWorks";
 import ContactCTA from "@/components/ContactCTA";
@@ -18,7 +18,7 @@ export default function Home() {
         <Marquee />
         <FeatureStrip />
         <Products />
-        <Moments />
+        <Reviews />
         <Story />
         <HowItWorks />
         <ContactCTA />
