@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import FeatureStrip from "@/components/FeatureStrip";
+import Craft from "@/components/Craft";
 import Products from "@/components/Products";
 import Reviews from "@/components/Reviews";
 import Story from "@/components/Story";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Marquee />
         <FeatureStrip />
+        <Craft />
         <Products />
         <Reviews />
         <Story />
