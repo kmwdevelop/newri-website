@@ -6,15 +6,15 @@ const ITEMS = [
 ];
 
 export default function Marquee() {
-  const line = ITEMS.join(" ✦ ") + " ✦ ";
+  const line = ITEMS.join("   /   ") + "   /   ";
 
   return (
-    <div className="overflow-hidden border-y-4 border-ink bg-ink py-3">
+    <div className="overflow-hidden bg-ink py-3">
       <div className="flex w-max animate-marquee">
         {[0, 1].map((rep) => (
           <span
             key={rep}
-            className="flex shrink-0 items-center whitespace-nowrap px-4 font-display text-lg text-butter sm:text-xl"
+            className="flex shrink-0 items-center whitespace-nowrap px-4 text-sm font-bold uppercase tracking-wider text-paper sm:text-base"
           >
             {line}
           </span>

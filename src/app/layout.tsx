@@ -1,18 +1,5 @@
 import type { Metadata } from "next";
-import { Jua, Gaegu } from "next/font/google";
 import "./globals.css";
-
-const jua = Jua({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-jua",
-});
-
-const gaegu = Gaegu({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-gaegu",
-});
 
 export const metadata: Metadata = {
   title: "New:ri 뉴리뉴리 | 오직, 당신만을 위한 핸드메이드",
@@ -22,11 +9,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="ko"
-      className={`${jua.variable} ${gaegu.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-cream text-ink overflow-x-hidden">
+    <html lang="ko" className="h-full antialiased">
+      <body className="min-h-full flex flex-col bg-paper text-ink">
         {children}
       </body>
     </html>
