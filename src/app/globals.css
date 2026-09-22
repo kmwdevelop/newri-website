@@ -1,0 +1,49 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import "tailwindcss";
+
+:root {
+  --background: #fdf8f0;
+  --foreground: #4a3527;
+
+  --color-cream: #fdf8f0;
+  --color-cream-deep: #fbeedb;
+  --color-brown: #5c3e28;
+  --color-brown-soft: #8a6a4e;
+  --color-brown-muted: #a98a6c;
+  --color-pink: #ffb9c6;
+  --color-blush: #ffe6ea;
+  --color-sky: #cfe6f7;
+  --color-butter: #ffe6a0;
+  --color-sage: #dcebd1;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: var(--color-cream);
+  --color-cream-deep: var(--color-cream-deep);
+  --color-brown: var(--color-brown);
+  --color-brown-soft: var(--color-brown-soft);
+  --color-brown-muted: var(--color-brown-muted);
+  --color-pink: var(--color-pink);
+  --color-blush: var(--color-blush);
+  --color-sky: var(--color-sky);
+  --color-butter: var(--color-butter);
+  --color-sage: var(--color-sage);
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-pink);
+  color: var(--color-brown);
+}
