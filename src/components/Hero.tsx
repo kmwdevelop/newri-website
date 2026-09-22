@@ -54,19 +54,34 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
+          initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex flex-1 justify-center"
+          className="relative flex flex-1 justify-center"
         >
-          <div className="animate-bob flex h-64 w-64 items-center justify-center rounded-full bg-card shadow-soft sm:h-80 sm:w-80">
+          <div className="relative aspect-[3/4] w-64 overflow-hidden rounded-[2rem] shadow-soft sm:w-80">
+            <Image
+              src="/brand/making.jpg"
+              alt="뉴리뉴리 손바느질 제작 과정"
+              fill
+              priority
+              sizes="(max-width: 640px) 256px, 320px"
+              className="object-cover"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/60 to-transparent p-4 pt-10">
+              <p className="text-xs font-bold text-white sm:text-sm">
+                한 땀 한 땀, 정성껏 손바느질로 제작해요
+              </p>
+            </div>
+          </div>
+
+          <div className="animate-bob absolute -left-4 top-4 rounded-full border-2 border-card bg-card p-1.5 shadow-soft-sm sm:-left-8">
             <Image
               src="/brand/mascot-tan.jpeg"
               alt="뉴리 마스코트"
-              width={260}
-              height={260}
-              priority
-              className="h-48 w-48 object-contain sm:h-60 sm:w-60"
+              width={56}
+              height={56}
+              className="h-12 w-12 object-contain sm:h-14 sm:w-14"
             />
           </div>
         </motion.div>
