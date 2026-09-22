@@ -8,6 +8,7 @@
   --color-ink: #5b4b42;
   --color-paper: #fffcf7;
   --color-card: #ffffff;
+  --color-charcoal: #211d1e;
 
   --color-blush: #ffc2d1;
   --color-blush-deep: #ff8fac;
@@ -30,6 +31,7 @@
   --color-ink: var(--color-ink);
   --color-paper: var(--color-paper);
   --color-card: var(--color-card);
+  --color-charcoal: var(--color-charcoal);
   --color-blush: var(--color-blush);
   --color-blush-deep: var(--color-blush-deep);
   --color-mint: var(--color-mint);

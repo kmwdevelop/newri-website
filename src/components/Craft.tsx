@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export default function Craft() {
   return (
-    <section className="bg-ink px-6 py-20 md:py-28">
+    <section className="bg-charcoal px-6 py-20 md:py-28">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:gap-16">
         <Reveal className="w-full md:flex-1">
           <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[1.5rem] shadow-soft">
@@ -35,15 +35,15 @@ export default function Craft() {
 
           <div className="mx-auto mt-8 grid max-w-md grid-cols-3 gap-4 md:mx-0">
             <div className="border-t border-white/15 pt-3 text-center md:text-left">
-              <p className="font-display text-xl text-white">2022~</p>
+              <p className="font-display text-xl text-peach-deep">2022~</p>
               <p className="mt-1 text-xs text-white/50">제작 시작</p>
             </div>
             <div className="border-t border-white/15 pt-3 text-center md:text-left">
-              <p className="font-display text-xl text-white">100%</p>
+              <p className="font-display text-xl text-peach-deep">100%</p>
               <p className="mt-1 text-xs text-white/50">핸드메이드</p>
             </div>
             <div className="border-t border-white/15 pt-3 text-center md:text-left">
-              <p className="font-display text-xl text-white">1:1</p>
+              <p className="font-display text-xl text-peach-deep">1:1</p>
               <p className="mt-1 text-xs text-white/50">맞춤 제작</p>
             </div>
           </div>
