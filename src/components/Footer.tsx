@@ -15,10 +15,10 @@ export default function Footer() {
             height={26}
             className="rounded-full"
           />
-          <span className="text-base font-black text-ink">뉴리뉴리 New:ri</span>
+          <span className="font-display text-base text-ink">뉴리뉴리 New:ri</span>
         </div>
 
-        <p className="text-xs font-bold leading-relaxed text-ink/50">
+        <p className="text-xs leading-relaxed text-ink/45">
           뉴리(New:ri) · 대표: 곽민우 · 서울특별시 용산구 한강대로104라길 34, 402호(후암동)
           <br />
           사업자등록번호: 189-02-02663 · 통신판매업신고: 제2022-서울용산-1519호

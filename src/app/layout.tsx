@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Gowun_Dodum } from "next/font/google";
 import "./globals.css";
+
+const gowun = Gowun_Dodum({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-gowun",
+});
 
 export const metadata: Metadata = {
   title: "New:ri 뉴리뉴리 | 오직, 당신만을 위한 핸드메이드",
@@ -9,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ko" className="h-full antialiased">
+    <html lang="ko" className={`${gowun.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-paper text-ink">
         {children}
       </body>

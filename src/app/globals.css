@@ -2,20 +2,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111111;
+  --background: #fffcf7;
+  --foreground: #5b4b42;
 
-  --color-ink: #111111;
-  --color-paper: #ffffff;
+  --color-ink: #5b4b42;
+  --color-paper: #fffcf7;
+  --color-card: #ffffff;
 
-  --color-lime: #c6f24a;
-  --color-tangerine: #ff8a00;
-  --color-cherry: #e8362a;
-  --color-sky: #2fb6e0;
-  --color-violet: #8c6ff0;
-  --color-pink: #ff4f9a;
-  --color-mustard: #f2c230;
-  --color-grass: #3fa34d;
+  --color-blush: #ffe4ea;
+  --color-blush-deep: #ffcdda;
+  --color-mint: #e1f4e8;
+  --color-mint-deep: #c3e9d1;
+  --color-lavender: #eae3fa;
+  --color-lavender-deep: #d9c9f5;
+  --color-butter: #fff3d6;
+  --color-butter-deep: #ffe6a8;
+  --color-sky: #dcf0fb;
+  --color-sky-deep: #bfe4f5;
+  --color-peach: #ffe6d9;
+  --color-peach-deep: #ffcbb0;
+  --color-coral: #ff9d95;
 }
 
 @theme inline {
@@ -23,15 +29,22 @@
   --color-foreground: var(--foreground);
   --color-ink: var(--color-ink);
   --color-paper: var(--color-paper);
-  --color-lime: var(--color-lime);
-  --color-tangerine: var(--color-tangerine);
-  --color-cherry: var(--color-cherry);
+  --color-card: var(--color-card);
+  --color-blush: var(--color-blush);
+  --color-blush-deep: var(--color-blush-deep);
+  --color-mint: var(--color-mint);
+  --color-mint-deep: var(--color-mint-deep);
+  --color-lavender: var(--color-lavender);
+  --color-lavender-deep: var(--color-lavender-deep);
+  --color-butter: var(--color-butter);
+  --color-butter-deep: var(--color-butter-deep);
   --color-sky: var(--color-sky);
-  --color-violet: var(--color-violet);
-  --color-pink: var(--color-pink);
-  --color-mustard: var(--color-mustard);
-  --color-grass: var(--color-grass);
+  --color-sky-deep: var(--color-sky-deep);
+  --color-peach: var(--color-peach);
+  --color-peach-deep: var(--color-peach-deep);
+  --color-coral: var(--color-coral);
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+  --font-display: var(--font-gowun), var(--font-sans);
 }
 
 body {
@@ -45,8 +58,16 @@ html {
 }
 
 ::selection {
-  background: var(--color-ink);
-  color: var(--color-paper);
+  background: var(--color-blush-deep);
+  color: var(--color-ink);
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px -12px rgba(91, 75, 66, 0.18);
+}
+
+.shadow-soft-sm {
+  box-shadow: 0 4px 14px -6px rgba(91, 75, 66, 0.15);
 }
 
 @keyframes marquee {
@@ -59,5 +80,19 @@ html {
 }
 
 .animate-marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 24s linear infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bob {
+  animation: bob 3.6s ease-in-out infinite;
 }
