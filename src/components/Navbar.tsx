@@ -8,6 +8,8 @@ const NAV_LINKS = [
   { href: "#process", label: "제작 과정" },
 ];
 
+const KAKAO_CHANNEL_URL = "http://pf.kakao.com/_nmVfn/friend";
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur">
@@ -38,7 +40,9 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#contact"
+          href={KAKAO_CHANNEL_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-full bg-coral px-5 py-2.5 text-sm font-bold text-white shadow-soft-sm transition-transform hover:scale-105"
         >
           문의하기
